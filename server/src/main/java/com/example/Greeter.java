@@ -10,12 +10,13 @@ package com.example;
 public class Greeter {
 
   /**
-   * Returns String of greeting
+   * Returns final String of greeting
    *
    * @param     someone String name of person.
    * @return    String result after process.
    */
-  public String greet(String someone) {
+  public final String greet(final String someone)
+  {
     return String.format("Hello, %s!", someone);
   }
 }
